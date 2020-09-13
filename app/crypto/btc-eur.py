@@ -10,10 +10,10 @@ finename = '../data/XXBTZEUR.csv'
 if __name__ == '__main__':
 
     #Create dump file if not created (not tracked by git)
-    if not os.path.exists('../data/'):
-        os.makedirs('../data/')
+    if not os.path.exists('../../data/'):
+        os.makedirs('../../data/')
 
-    page, now = utils.get_api_result(url, pair)
+    page, now = utils.get_api_result(url, pair&
     header, data = utils.get_currency(page, now, pair)
 
     with open(finename, 'wb') as f:

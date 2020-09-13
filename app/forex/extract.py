@@ -8,8 +8,8 @@ url = 'https://investir.lesechos.fr/traders/forex/'
 if __name__ == '__main__':
 
     #Create dump file if not created (not tracked by git)
-    if not os.path.exists('../data/'):
-        os.makedirs('../data/')
+    if not os.path.exists('../../data/'):
+        os.makedirs('../../data/')
 
     finename = '../data/forex.csv'
 
