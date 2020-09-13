@@ -11,7 +11,7 @@ if __name__ == '__main__':
     if not os.path.exists('../../data/'):
         os.makedirs('../../data/')
 
-    finename = '../data/forex.csv'
+    finename = '../../data/forex.csv'
 
     soup, now = utils.make_the_soup(url)
     header, data = utils.get_currency(soup, now)
