@@ -25,11 +25,11 @@ def get_currency(page, now, pair):
         'hour' : int(now.hour),
         'minute' : int(now.minute),
         'second' : int(now.second),
-        'ask' : page['result']['XXBTZEUR']['a'][0],
-        'bid' : page['result']['XXBTZEUR']['b'][0],
-        'last trade closed' : page['result']['XXBTZEUR']['c'][0],
-        'volume' : page['result']['XXBTZEUR']['v'][0],
-        'volume weighted average price' : page['result']['XXBTZEUR']['p'][0]
+        'ask' : page['result'][pair]['a'][0],
+        'bid' : page['result'][pair]['b'][0],
+        'last trade closed' : page['result'][pair]['c'][0],
+        'volume' : page['result'][pair]['v'][0],
+        'volume weighted average price' : page['result'][pair]['p'][0]
     }
     dict_values = {keys: np.float(value) for keys, value in dict_values.items()}
     header = str(list(dict_values.keys()))[1:-1].replace('\'','')

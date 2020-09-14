@@ -4,7 +4,7 @@ import time
 import numpy as np
 
 url = 'https://api.kraken.com/0/public/Ticker'
-pair = 'XXBTZEUR'
+pair = 'XXBTZJPY'
 finename = '../../data/{}.csv'.format(pair)
 
 if __name__ == '__main__':
